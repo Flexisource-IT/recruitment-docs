@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exclude Operator in Search &mdash; Recruitment Platform</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <title>User should be able to store Candidates’ Pre-Onboarding Documents &mdash; Recruitment Platform</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/theme_override.css" type="text/css" /><link rel="shortcut icon" href="../../_static/tok.ico"/>
   <!--[if lt IE 9]>
@@ -17,8 +17,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Logical AND Search" href="LogicalAndSearch.html" />
-    <link rel="prev" title="Exact Match Search" href="ExactMatchSearch.html" /> 
+    <link rel="next" title="Search Engine Requirements" href="../SearchEngine.html" />
+    <link rel="prev" title="Pre-Onboarding Requirements" href="../PreOnboardingRequirements.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,21 +43,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../CandidateRequirements.html">Candidates’ Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../CandidateStates.html">Candidate States</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Parser.html">Parser Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../PreOnboardingRequirements.html">Pre-Onboarding Requirements</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../SearchEngine.html"><span class="xref std std-term">Search Engine</span> Requirements</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="ExactMatchSearch.html">Exact Match Search</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Exclude Operator in Search</a><ul>
+<li class="toctree-l2 current"><a class="reference internal" href="../PreOnboardingRequirements.html">Pre-Onboarding Requirements</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">User should be able to store Candidates’ Pre-Onboarding Documents</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#description">Description:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#mock-up">Mock-up:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#note">Note:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#use-case">Use Case:</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="LogicalAndSearch.html">Logical AND Search</a></li>
-<li class="toctree-l3"><a class="reference internal" href="LogicalOrSearch.html">Logical OR Search</a></li>
-<li class="toctree-l3"><a class="reference internal" href="SearchEngineDefaultFunctionality.html"><span class="xref std std-term">Search Engine</span> Default Functionality</a></li>
-<li class="toctree-l3"><a class="reference internal" href="SearchResultsPage.html">Search Results Page</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../SearchEngine.html"><span class="xref std std-term">Search Engine</span> Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../UserInput.html">User Input Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../UserProfilePage.html">User Profile Page</a></li>
 </ul>
@@ -81,10 +76,10 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../HighLevelReq.html">High Level Requirements</a> &raquo;</li>
-          <li><a href="../SearchEngine.html"><span class="xref std std-term">Search Engine</span> Requirements</a> &raquo;</li>
-      <li>Exclude Operator in Search</li>
+          <li><a href="../PreOnboardingRequirements.html">Pre-Onboarding Requirements</a> &raquo;</li>
+      <li>User should be able to store Candidates’ Pre-Onboarding Documents</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/HighLevelReq/SearchEngine/ExcludeOperatorInSearchString.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/HighLevelReq/PreOnboardingRequirements/UserCanStorePreOnboardingRequirements.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -92,24 +87,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="exclude-operator-in-search">
-<span id="excludeoperatorinsearchstring"></span><h1>Exclude Operator in Search<a class="headerlink" href="#exclude-operator-in-search" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="user-should-be-able-to-store-candidates-pre-onboarding-documents">
+<span id="usercanstorepreonboardingrequirements"></span><h1>User should be able to store Candidates’ Pre-Onboarding Documents<a class="headerlink" href="#user-should-be-able-to-store-candidates-pre-onboarding-documents" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">UserCanStorePreOnboardingRequirements</span></code></p>
 <div class="section" id="description">
 <h2>Description:<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>Exclude operator (-) is supported.
-That means that search result should contain the needed string without the string immediately following “-“.
-Remember to always include a space before the - sign, and none after.</p>
-</div>
-<div class="section" id="mock-up">
-<h2>Mock-up:<a class="headerlink" href="#mock-up" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://docs.google.com/spreadsheets/d/15JdRpaZdsIaJpi35PfBCYXX3PfTBGZaBKae5tH3xdiM/edit#gid=1436297217">Link to Mockup</a></p></li>
+<p>This Recruitment Platform should be able to store the following Candidates’ Requirements using PDF, Word, Pictures such as <a href="#id1"><span class="problematic" id="id2">*</span></a>.jpg and <a href="#id3"><span class="problematic" id="id4">*</span></a>.png:</p>
+<blockquote>
+<div><p>For Recruitment:</p>
+<ol class="arabic simple">
+<li><p>Application Sheet</p></li>
+<li><p>Payslip (All other filetypes and also supports Excel)</p></li>
+</ol>
+<p>Pre-Onboarding Requirements:</p>
+<ol class="arabic" start="3">
+<li><p>Government Numbers such as SSS, TIN, HDMF, PHILHEALTH</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Each Government ID has their own UI element</p></li>
 </ul>
+</div></blockquote>
+</li>
+<li><p>NBI or Police Clearance</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Only one of these is needed</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Personal Data Sheet (for HMO Activation and Sprout Details) - Excel of PDF</p></li>
+<li><p>Welcome Message Questionnaire</p></li>
+<li><p>Scanned Copy of Photo</p></li>
+<li><p>Personal Internet and Laptop Specs</p></li>
+<li><p>Personal Bank account details</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="note">
+<h2>Note:<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>User has to convert to the required File Formats as specified in Description.</p>
+</div></blockquote>
 </div>
 <div class="section" id="use-case">
 <h2>Use Case:<a class="headerlink" href="#use-case" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="../../UseCases/SearchBasedOnCriteria.html#searchbasedoncriteria"><span class="std std-ref">UC: Search Candidates based on Criteria</span></a></p></li>
+<li><p><a class="reference internal" href="../../UseCases/StoreCandidateRequirements.html#storecandidaterequirements"><span class="std std-ref">UC: Store Candidates’ Requirements</span></a></p></li>
 </ul>
 </div>
 </div>
@@ -118,8 +141,8 @@ Remember to always include a space before the - sign, and none after.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ExactMatchSearch.html" class="btn btn-neutral float-left" title="Exact Match Search" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="LogicalAndSearch.html" class="btn btn-neutral float-right" title="Logical AND Search" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../PreOnboardingRequirements.html" class="btn btn-neutral float-left" title="Pre-Onboarding Requirements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../SearchEngine.html" class="btn btn-neutral float-right" title="Search Engine Requirements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

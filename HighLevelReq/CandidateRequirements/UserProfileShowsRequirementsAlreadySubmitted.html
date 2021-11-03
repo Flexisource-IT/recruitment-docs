@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Logical AND Search &mdash; Recruitment Platform</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <title>User Profile should show all Recruitments already submitted &mdash; Recruitment Platform</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/theme_override.css" type="text/css" /><link rel="shortcut icon" href="../../_static/tok.ico"/>
   <!--[if lt IE 9]>
@@ -17,8 +17,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Logical OR Search" href="LogicalOrSearch.html" />
-    <link rel="prev" title="Exclude Operator in Search" href="ExcludeOperatorInSearchString.html" /> 
+    <link rel="next" title="Candidate States" href="../CandidateStates.html" />
+    <link rel="prev" title="User should be able to store Candidates’ Pre-Onboarding Documents" href="UserCanStoreCandidatesRequirements.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,24 +40,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../../DesignDocument.html">Design Documents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FeaturesList.html">Features List</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../HighLevelReq.html">High Level Requirements</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../CandidateRequirements.html">Candidates’ Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../CandidateStates.html">Candidate States</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../Parser.html">Parser Requirements</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../SearchEngine.html"><span class="xref std std-term">Search Engine</span> Requirements</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="ExactMatchSearch.html">Exact Match Search</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ExcludeOperatorInSearchString.html">Exclude Operator in Search</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Logical AND Search</a><ul>
+<li class="toctree-l2 current"><a class="reference internal" href="../CandidateRequirements.html">Candidates’ Requirements</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="UserCanStoreCandidatesRequirements.html">User should be able to store Candidates’ Pre-Onboarding Documents</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">User Profile should show all Recruitments already submitted</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#description">Description:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#mock-up">Mock-up:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#related-requirements">Related Requirements:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#use-case">Use Case:</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="LogicalOrSearch.html">Logical OR Search</a></li>
-<li class="toctree-l3"><a class="reference internal" href="SearchEngineDefaultFunctionality.html"><span class="xref std std-term">Search Engine</span> Default Functionality</a></li>
-<li class="toctree-l3"><a class="reference internal" href="SearchResultsPage.html">Search Results Page</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../CandidateStates.html">Candidate States</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Parser.html">Parser Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../SearchEngine.html"><span class="xref std std-term">Search Engine</span> Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../UserInput.html">User Input Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../UserProfilePage.html">User Profile Page</a></li>
 </ul>
@@ -81,10 +75,10 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../HighLevelReq.html">High Level Requirements</a> &raquo;</li>
-          <li><a href="../SearchEngine.html"><span class="xref std std-term">Search Engine</span> Requirements</a> &raquo;</li>
-      <li>Logical AND Search</li>
+          <li><a href="../CandidateRequirements.html">Candidates’ Requirements</a> &raquo;</li>
+      <li>User Profile should show all Recruitments already submitted</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/HighLevelReq/SearchEngine/LogicalAndSearch.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/HighLevelReq/CandidateRequirements/UserProfileShowsRequirementsAlreadySubmitted.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -92,29 +86,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="logical-and-search">
-<span id="logicalandsearch"></span><h1>Logical AND Search<a class="headerlink" href="#logical-and-search" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="user-profile-should-show-all-recruitments-already-submitted">
+<span id="userprofileshowsrequirementsalreadysubmitted"></span><h1>User Profile should show all Recruitments already submitted<a class="headerlink" href="#user-profile-should-show-all-recruitments-already-submitted" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">UserProfileShowsRequirementsAlreadySubmitted</span></code></p>
 <div class="section" id="description">
 <h2>Description:<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>Logical AND search is supported and is the default search option.
-User can either just type his search string normally, or type AND in between words</p>
-</div>
-<div class="section" id="mock-up">
-<h2>Mock-up:<a class="headerlink" href="#mock-up" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://docs.google.com/spreadsheets/d/15JdRpaZdsIaJpi35PfBCYXX3PfTBGZaBKae5tH3xdiM/edit#gid=1436297217">Link to Mockup</a></p></li>
-</ul>
-</div>
-<div class="section" id="related-requirements">
-<h2>Related Requirements:<a class="headerlink" href="#related-requirements" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference internal" href="SearchEngineDefaultFunctionality.html#searchenginedefaultfunctionality"><span class="std std-ref">Search Engine Default Functionality</span></a></p></li>
-</ul>
+<p>Information about Candidates’ Requirements should be shown on the User Profile Page</p>
 </div>
 <div class="section" id="use-case">
 <h2>Use Case:<a class="headerlink" href="#use-case" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="../../UseCases/SearchBasedOnCriteria.html#searchbasedoncriteria"><span class="std std-ref">UC: Search Candidates based on Criteria</span></a></p></li>
+<li><p><a class="reference internal" href="../../UseCases/StoreCandidateRequirements.html#storecandidaterequirements"><span class="std std-ref">UC: Store Candidates’ Requirements</span></a></p></li>
 </ul>
 </div>
 </div>
@@ -123,8 +105,8 @@ User can either just type his search string normally, or type AND in between wor
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ExcludeOperatorInSearchString.html" class="btn btn-neutral float-left" title="Exclude Operator in Search" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="LogicalOrSearch.html" class="btn btn-neutral float-right" title="Logical OR Search" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="UserCanStoreCandidatesRequirements.html" class="btn btn-neutral float-left" title="User should be able to store Candidates’ Pre-Onboarding Documents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../CandidateStates.html" class="btn btn-neutral float-right" title="Candidate States" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

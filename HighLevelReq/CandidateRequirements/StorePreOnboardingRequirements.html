@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>User Profile should show all Recruitments already submitted &mdash; Recruitment Platform</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <title>User should be able to store Candidates’ Pre-Onboarding Documents &mdash; Recruitment Platform</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/theme_override.css" type="text/css" /><link rel="shortcut icon" href="../../_static/tok.ico"/>
   <!--[if lt IE 9]>
@@ -17,8 +17,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Candidate States" href="../CandidateStates.html" />
-    <link rel="prev" title="User should be able to store Candidates’ Pre-Onboarding Documents" href="StorePreOnboardingRequirements.html" /> 
+    <link rel="next" title="User Profile should show all Recruitments already submitted" href="UserProfileShowsRequirementsAlreadySubmitted.html" />
+    <link rel="prev" title="User should be able to store Candidates’ Pre-Onboarding Documents" href="StoreApplicationDocuments.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,12 +42,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../HighLevelReq.html">High Level Requirements</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../CandidateRequirements.html">Candidates Requirements</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="StoreApplicationDocuments.html">User should be able to store Candidates’ Pre-Onboarding Documents</a></li>
-<li class="toctree-l3"><a class="reference internal" href="StorePreOnboardingRequirements.html">User should be able to store Candidates’ Pre-Onboarding Documents</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">User Profile should show all Recruitments already submitted</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">User should be able to store Candidates’ Pre-Onboarding Documents</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#description">Description:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#note">Note:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#use-case">Use Case:</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="UserProfileShowsRequirementsAlreadySubmitted.html">User Profile should show all Recruitments already submitted</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../CandidateStates.html">Candidate States</a></li>
@@ -77,9 +78,9 @@
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../HighLevelReq.html">High Level Requirements</a> &raquo;</li>
           <li><a href="../CandidateRequirements.html">Candidates Requirements</a> &raquo;</li>
-      <li>User Profile should show all Recruitments already submitted</li>
+      <li>User should be able to store Candidates’ Pre-Onboarding Documents</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/HighLevelReq/CandidateRequirements/UserProfileShowsRequirementsAlreadySubmitted.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/HighLevelReq/CandidateRequirements/StorePreOnboardingRequirements.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -87,12 +88,57 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="user-profile-should-show-all-recruitments-already-submitted">
-<span id="userprofileshowsrequirementsalreadysubmitted"></span><h1>User Profile should show all Recruitments already submitted<a class="headerlink" href="#user-profile-should-show-all-recruitments-already-submitted" title="Permalink to this headline">¶</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">UserProfileShowsRequirementsAlreadySubmitted</span></code></p>
+  <div class="section" id="user-should-be-able-to-store-candidates-pre-onboarding-documents">
+<span id="storepreonboardingrequirements"></span><h1>User should be able to store Candidates’ Pre-Onboarding Documents<a class="headerlink" href="#user-should-be-able-to-store-candidates-pre-onboarding-documents" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">StorePreOnboardingRequirements</span></code></p>
 <div class="section" id="description">
 <h2>Description:<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>Information about Candidates’ Requirements should be shown on the User Profile Page</p>
+<p>This Recruitment Platform should be able to store the following Pre-Onboarding Requirements:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Government Numbers such as SSS, TIN, HDMF, PHILHEALTH</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Each Government ID has their own UI element</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>NBI or Police Clearance</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Only one of these is needed</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Personal Data Sheet (for HMO Activation and Sprout Details)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>See Notes section for more supported file formats</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Welcome Message Questionnaire</p></li>
+<li><p>Scanned Copy of Photo</p></li>
+<li><p>Personal Internet and Laptop Specs</p></li>
+<li><p>Personal Bank account details</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="note">
+<h2>Note:<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Default file formats are:</p>
+<ul class="simple">
+<li><p>PDF</p></li>
+<li><p>Word</p></li>
+<li><p>JPG</p></li>
+<li><p>PNG</p></li>
+</ul>
+</li>
+<li><p>Personal Data Sheet uses either Excel or PDF format</p></li>
+</ol>
+</div></blockquote>
 </div>
 <div class="section" id="use-case">
 <h2>Use Case:<a class="headerlink" href="#use-case" title="Permalink to this headline">¶</a></h2>
@@ -106,8 +152,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="StorePreOnboardingRequirements.html" class="btn btn-neutral float-left" title="User should be able to store Candidates’ Pre-Onboarding Documents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../CandidateStates.html" class="btn btn-neutral float-right" title="Candidate States" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="StoreApplicationDocuments.html" class="btn btn-neutral float-left" title="User should be able to store Candidates’ Pre-Onboarding Documents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="UserProfileShowsRequirementsAlreadySubmitted.html" class="btn btn-neutral float-right" title="User Profile should show all Recruitments already submitted" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

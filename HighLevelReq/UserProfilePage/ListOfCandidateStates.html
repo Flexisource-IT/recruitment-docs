@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>User Profile should show all Recruitments already submitted &mdash; Recruitment Platform</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <title>List of Candidate States &mdash; Recruitment Platform</title><link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/theme_override.css" type="text/css" /><link rel="shortcut icon" href="../../_static/tok.ico"/>
   <!--[if lt IE 9]>
@@ -17,8 +17,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Parser Requirements" href="../Parser.html" />
-    <link rel="prev" title="User should be able to store Candidate’s Pre-Onboarding Documents" href="StorePreOnboardingRequirements.html" /> 
+    <link rel="next" title="User Profile Page Contains Tabs" href="UserProfilePageContainsTabs.html" />
+    <link rel="prev" title="User Profile Page" href="../UserProfilePage.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,20 +40,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../../DesignDocument.html">Design Documents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../FeaturesList.html">Features List</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../HighLevelReq.html">High Level Requirements</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../CandidateRequirements.html">Candidates Requirements</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="StoreApplicationDocuments.html">User should be able to store Candidate’s Application-related Documents</a></li>
-<li class="toctree-l3"><a class="reference internal" href="StorePreOnboardingRequirements.html">User should be able to store Candidate’s Pre-Onboarding Documents</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">User Profile should show all Recruitments already submitted</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#description">Description:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#use-case">Use Case:</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../CandidateRequirements.html">Candidates Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../Parser.html">Parser Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../SearchEngine.html"><span class="xref std std-term">Search Engine</span> Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../UserInput.html">User Input Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../UserProfilePage.html">User Profile Page</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../UserProfilePage.html">User Profile Page</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">List of Candidate States</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#description">Description:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#wireframe">Wireframe:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="UserProfilePageContainsTabs.html">User Profile Page Contains Tabs</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../UseCases.html">Use Cases</a></li>
@@ -75,10 +74,10 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../HighLevelReq.html">High Level Requirements</a> &raquo;</li>
-          <li><a href="../CandidateRequirements.html">Candidates Requirements</a> &raquo;</li>
-      <li>User Profile should show all Recruitments already submitted</li>
+          <li><a href="../UserProfilePage.html">User Profile Page</a> &raquo;</li>
+      <li>List of Candidate States</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/HighLevelReq/CandidateRequirements/UserProfileShowsRequirementsAlreadySubmitted.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/HighLevelReq/UserProfilePage/ListOfCandidateStates.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -86,18 +85,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="user-profile-should-show-all-recruitments-already-submitted">
-<span id="userprofileshowsrequirementsalreadysubmitted"></span><h1>User Profile should show all Recruitments already submitted<a class="headerlink" href="#user-profile-should-show-all-recruitments-already-submitted" title="Permalink to this headline">¶</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">UserProfileShowsRequirementsAlreadySubmitted</span></code></p>
+  <div class="section" id="list-of-candidate-states">
+<span id="listofcandidatestates"></span><h1>List of Candidate States<a class="headerlink" href="#list-of-candidate-states" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">ListOfCandidateStates</span></code></p>
 <div class="section" id="description">
 <h2>Description:<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>Information about Candidate’s Requirements should be shown on the User Profile Page</p>
+<p>The following candidate state’s are displayed in this recruitment platform:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Initial Recruitment Interview</p></li>
+<li><p>Request Applicant to submit Recruitment-related Requirements -&gt; Link to items 1 and 2 only</p></li>
+<li><p>In Process. This could mean any of the following things, in any order:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Technical Interview</p></li>
+<li><p>Initial Client Interview</p></li>
+<li><p>Technical test</p></li>
+<li><p>Final Interview/ Team Interview</p></li>
+<li><p>Reference Checks</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Job Offer/ Negotiation</p></li>
+<li><p>Request Applicant to submit Remaining Requirements -&gt; Link to 3 onwards</p></li>
+<li><p>HR Onboarding</p></li>
+</ol>
+</div></blockquote>
 </div>
-<div class="section" id="use-case">
-<h2>Use Case:<a class="headerlink" href="#use-case" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference internal" href="../../UseCases/UploadCandidateRequirements.html#uploadcandidaterequirements"><span class="std std-ref">UC: Upload Candidate’s Requirements</span></a></p></li>
-</ul>
+<div class="section" id="wireframe">
+<h2>Wireframe:<a class="headerlink" href="#wireframe" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>Add link to wireframe here</p>
+</div>
 </div>
 </div>
 
@@ -105,8 +125,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="StorePreOnboardingRequirements.html" class="btn btn-neutral float-left" title="User should be able to store Candidate’s Pre-Onboarding Documents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../Parser.html" class="btn btn-neutral float-right" title="Parser Requirements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../UserProfilePage.html" class="btn btn-neutral float-left" title="User Profile Page" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="UserProfilePageContainsTabs.html" class="btn btn-neutral float-right" title="User Profile Page Contains Tabs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UC: Download Candidate’s Requirements &mdash; Recruitment Platform</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>UC: Upload Candidate’s Requirements &mdash; Recruitment Platform</title><link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/theme_override.css" type="text/css" /><link rel="shortcut icon" href="../_static/tok.ico"/>
   <!--[if lt IE 9]>
@@ -17,8 +17,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="UC: Input Candidate Profile" href="InputCandidateProfile.html" />
-    <link rel="prev" title="Use Cases" href="../UseCases.html" /> 
+    <link rel="next" title="Glossary" href="../glossary.html" />
+    <link rel="prev" title="UC: Search Candidates based on Criteria" href="SearchBasedOnCriteria.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,7 +41,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../FeaturesList.html">Features List</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../HighLevelReq.html">High Level Requirements</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../UseCases.html">Use Cases</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">UC: Download Candidate’s Requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="DownloadCandidateRequirements.html">UC: Download Candidate’s Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InputCandidateProfile.html">UC: Input Candidate Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SearchBasedOnCriteria.html">UC: Search Candidates based on Criteria</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">UC: Upload Candidate’s Requirements</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#triggers">Triggers:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#pre-conditions">Pre-conditions:</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#description">Description:</a></li>
@@ -51,9 +54,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#references-to-high-level-requirements">References to High-Level Requirements:</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="InputCandidateProfile.html">UC: Input Candidate Profile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="SearchBasedOnCriteria.html">UC: Search Candidates based on Criteria</a></li>
-<li class="toctree-l2"><a class="reference internal" href="UploadCandidateRequirements.html">UC: Upload Candidate’s Requirements</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
@@ -74,9 +74,9 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../UseCases.html">Use Cases</a> &raquo;</li>
-      <li>UC: Download Candidate’s Requirements</li>
+      <li>UC: Upload Candidate’s Requirements</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/UseCases/DownloadCandidateRequirements.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/UseCases/UploadCandidateRequirements.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -84,13 +84,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="uc-download-candidate-s-requirements">
-<span id="downloadcandidaterequirements"></span><h1>UC: Download Candidate’s Requirements<a class="headerlink" href="#uc-download-candidate-s-requirements" title="Permalink to this headline">¶</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">DownloadCandidateRequirements</span></code></p>
+  <div class="section" id="uc-upload-candidate-s-requirements">
+<span id="uploadcandidaterequirements"></span><h1>UC: Upload Candidate’s Requirements<a class="headerlink" href="#uc-upload-candidate-s-requirements" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">UploadCandidateRequirements</span></code></p>
 <div class="section" id="triggers">
 <h2>Triggers:<a class="headerlink" href="#triggers" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>User wants to download Candidate’s Requirements to the Recruitment Platform</p>
+<div><p>User wants to upload Candidate’s Requirements to the Recruitment Platform</p>
 </div></blockquote>
 </div>
 <div class="section" id="pre-conditions">
@@ -105,7 +105,7 @@
 <div class="section" id="post-conditions">
 <h2>Post-conditions:<a class="headerlink" href="#post-conditions" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>Candidate’s Requirements are downloaded successfully.</p>
+<div><p>Candidate’s Requirements are now stored in <a class="reference internal" href="../glossary/glossary.html#term-database"><span class="xref std std-term">Database</span></a>.</p>
 </div></blockquote>
 </div>
 <div class="section" id="exceptions">
@@ -136,8 +136,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../UseCases.html" class="btn btn-neutral float-left" title="Use Cases" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="InputCandidateProfile.html" class="btn btn-neutral float-right" title="UC: Input Candidate Profile" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="SearchBasedOnCriteria.html" class="btn btn-neutral float-left" title="UC: Search Candidates based on Criteria" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../glossary.html" class="btn btn-neutral float-right" title="Glossary" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

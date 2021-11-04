@@ -1,14 +1,14 @@
-.. _DownloadCandidateRequirements:
+.. _UploadCandidateRequirements:
 
-UC: Download Candidate's Requirements
+UC: Upload Candidate's Requirements
 =================================================================================================================================
 
-``DownloadCandidateRequirements``
+``UploadCandidateRequirements``
 
 Triggers:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    User wants to download Candidate's Requirements to the Recruitment Platform
+    User wants to upload Candidate's Requirements to the Recruitment Platform
 
 Pre-conditions:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -26,18 +26,18 @@ Description:
         participant "UI" as UI
         participant "Database" as Database
 
-        Recruiter  -> UI: Click button to download Candidate's Requirements
-        UI -> Recruiter: Show option to select the file for download
-        Recruiter -> UI: Select the file and click Download
+        Recruiter  -> UI: Click button to upload Candidate's Requirements
+        UI -> Recruiter: Show option to select the file for upload
+        Recruiter -> UI: Select the file and click Upload
 
-        UI -> Database: Download file to Database
+        UI -> Database: Upload file to Database
         
-        alt Download is Successful
-            Database -> UI: //Download Successful//
-            UI -> Recruiter: //Download Successful//
+        alt Upload is Successful
+            Database -> UI: //Upload Successful//
+            UI -> Recruiter: //Upload Successful//
         else
-            Database -> UI: //Download Unsuccessful//
-            UI -> Recruiter: //Download Unsuccessful//
+            Database -> UI: //Upload Unsuccessful//
+            UI -> Recruiter: //Upload Unsuccessful//
 
             note over Database, UI
                 Database may have many types of errors. 
@@ -50,7 +50,7 @@ Description:
 Post-conditions:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    Candidate's Requirements are downloaded successfully.
+    Candidate's Requirements are now stored in :term:`Database`.
 
 Exceptions:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

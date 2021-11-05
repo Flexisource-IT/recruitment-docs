@@ -128,7 +128,7 @@ path = os.path.abspath('_extensions/plantuml.jar')
 path = path.replace("\\","/")
 
 print(f'Displaying info for Java')
-os.system("which java")
+print(f'\n\n################### which Java: {os.system("which java")} ###################\n\n')
 
 plantuml = 'java -jar %s -tsvg' % path
 

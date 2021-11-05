@@ -129,6 +129,7 @@ path = path.replace("\\","/")
 
 print(f'Displaying info for Java')
 print(f'\n\n################### which Java: {os.system("which java")} ###################\n\n')
+print(f'\n\n################### Echo $PATH: {os.system("echo $PATH")} ###################\n\n')
 
 plantuml = 'java -jar %s -tsvg' % path
 

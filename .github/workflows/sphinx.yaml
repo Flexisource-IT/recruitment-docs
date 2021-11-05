@@ -12,7 +12,7 @@ jobs:
       uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "."
-        pre-build-command: "sudo apt install default-jdk && pip install graphviz sphinxcontrib-plantuml sphinx_rtd_theme && make clean"
+        pre-build-command: "apt install default-jdk && pip install graphviz sphinxcontrib-plantuml sphinx_rtd_theme && make clean"
         build-command: "make html"
     - uses: actions/upload-artifact@v1
       with:

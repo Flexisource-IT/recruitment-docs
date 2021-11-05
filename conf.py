@@ -127,6 +127,9 @@ html_context = {
 path = os.path.abspath('_extensions/plantuml.jar')
 path = path.replace("\\","/")
 
+print(f'Displaying info for Java')
+os.system("which java")
+
 plantuml = 'java -jar %s -tsvg' % path
 
 plantuml_output_format = 'svg'
